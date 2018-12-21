@@ -10,13 +10,4 @@
  */
 
 module.exports.bootstrap = async function() {
-
-  // Set up fake development data (or if we already have some, avast)
-  if (await Sentences.count() > 0) {
-    return;
-  }
-  await Sentences.createEach([
-    { sentence: 'Test', },
-    { sentence: 'Biniou', },
-  ]);
 };
