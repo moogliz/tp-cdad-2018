@@ -1,8 +1,8 @@
 
 exports.up = function(knex, Promise) {
   return knex.schema.table("sentences", function(table) {
-    table.integer('createdAt')
-    table.integer('updatedAt')
+    table.bigInteger('createdAt')
+    table.bigInteger('updatedAt')
   })
 };
 
