@@ -250,10 +250,11 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
+     onlyAllowOrigins: [
+       'https://tp-cdad-2018.scalingo.io'
     //   'https://example.com',
     //   'https://staging.example.com',
-    // ],
+    ],
 
 
     /***************************************************************************
