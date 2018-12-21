@@ -1,8 +1,8 @@
 
 exports.up = function(knex, Promise) {
   return knex.schema.table("sentences", function(table) {
-    table.timestamp('createdAt')
-    table.timestamp('updatedAt')
+    table.integer('createdAt')
+    table.integer('updatedAt')
   })
 };
 
