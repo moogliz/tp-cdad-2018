@@ -21,7 +21,7 @@ module.exports = {
       sentence = s[0].sentence;
     }
     return res.view('cowsay', { cow: cowsay.say({
-      f: process.env.COW || 'stegausorus',
+      f: process.env.COW || 'stegosaurus',
       text : sentence,
       e : 'oO',
       T : 'U '
