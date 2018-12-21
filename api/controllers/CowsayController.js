@@ -16,7 +16,10 @@ module.exports = {
     console.debug('Got '+count+' sentences in database');
     let s = await Sentences.find().limit(1).
       skip(Math.floor(Math.random() * Math.floor(count)));
-    let sentence = s[0].sentence;
+    let sentence = "Random Message";
+    if(s.length > 0) {
+      sentence = s[0].sentence;
+    }
     return res.view('cowsay', { cow: cowsay.say({
       f: process.env.COW || 'stegausorus',
       text : sentence,
