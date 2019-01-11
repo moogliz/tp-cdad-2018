@@ -14,28 +14,13 @@ Then start the web server with:
 docker-compose up
 ```
 
-Then in the browser: [http://localhost:1337](http://localhost:1337)
+Then in the browser: [2001:660:4703:f000::45]:1338 (http://localhost:1338)
 
-### TP 2
+You can add an image and a text at [2001:660:4703:f000::45]/add
 
-After a bit of research, you should have noticed that the
-[cowsay](https://www.npmjs.com/package/cowsay) package does exactly what you need. Install it with:
+You will see the image and the cow at [2001:660:4703:f000::45]/say
 
-```
-docker-compose run web npm install cowsay
-```
 
-Then generate the new controller and an action with:
-
-```
-docker-compose run web sails generate controller Cowsay say
-```
-
-Update the action code accordingly.
-
-Add the route in the `config/routes.js` file. Head to
-[http://localhost:1337/say](http://localhost:1337/say) and here you are! Let me introduce
-you to Marguerite, the talking cow.
 
 ### Resources
 
